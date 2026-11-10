@@ -4,37 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terraria - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
-
     <header>
         <h1>Terraria</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+    </header>    
+        <div class="container">   
+            <section class="conteudo">
+                <h2>O que é Terraria?</h2>
+                <p>
+                    Terraria é um jogo de RPG de ação e aventura independente produzido pela desenvolvedora de jogos Re-Logic. Possui como características a exploração, artesanato, construção de estruturas e combate a monstros perigosos em um mundo 2D gerado de forma procedural. Lançado no dia 16 de maio de 2011, o jogo vendeu mais de 45 milhões de cópias, recebendo atualizações gratuitas mesmo mais de dez anos depois de seu lançamento.
+                </p>
+                <p>
+                    Os jogadores podem enfrentar chefes,
+                    encontrar itens raros, construir casas
+                    e explorar diversos biomas.
+                </p>
+        </div>
         <section class="banner">
             <h2>Explore Aventuras Incríveis!</h2>
             <p>
                 Terraria é um jogo de aventura, exploração e construção
                 cheio de criaturas, biomas e desafios.
             </p>
-
             <a href="sobre.html" class="botao">Saiba Mais</a>
         </section>
-    </main>
-
+        <form class="row g-3">
+            <div class="md:col-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="md:col-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="md:col-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="md:col-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="md:col-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-field">
+                <input type="checkbox" id="gridCheck" class="check">
+                <label for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-solid theme-primary">Sign in</button>
+            </div>
+          </form>
     <footer>
         <p> Site feito por: Victor Mateus Dassi© </p>
     </footer>
-
+<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
