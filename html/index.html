@@ -7,38 +7,32 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body class="bg-body-tertiary">
-
- <!-- Barra de Navegação -->
-  <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-success border-3 shadow-sm">
+<!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg sticky-top z-3 bg-body border-bottom border-success border-3 shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
         <span class="badge text-bg-success fs-6 py-2 px-2">🌳</span>
         <span>Terraria <span class="text-success">Brasil</span></span>
       </a>
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTerraria" aria-controls="navbarTerraria" aria-expanded="false" aria-label="Alternar navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarTerraria">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
           <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
           <li class="nav-item"><a class="nav-link" href="#classes">Classes</a></li>
           <li class="nav-item"><a class="nav-link" href="#chefes">Chefes</a></li>
           <li class="nav-item"><a class="nav-link" href="#biomas">Biomas</a></li>
-          <li class="nav-item"><a class="nav-link fw-semibold text-success" href="#inscricao">Inscrição</a></li>
-          <li class="nav-item"><a class="nav-link" href="#comentarios">Comentários</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-success" href="#cadastro">Cadastro</a></li>
         </ul>
-
         <div class="d-flex">
-          <a href="#inscricao" class="btn btn-success btn-sm fw-semibold px-3">
-            Entrar no Servidor
+          <a href="#cadastro" class="btn btn-success btn-sm fw-semibold px-3">
+            Criar Conta
           </a>
         </div>
       </div>
     </div>
   </nav>
-
   <!-- Cabeçalho Principal (Hero) -->
   <header class="bg-success-subtle border-bottom py-5">
     <div class="container">
@@ -54,11 +48,10 @@
             Guias completos de classes, ordem de chefes, exploração de biomas e inscrições abertas para o nosso servidor multiplayer da comunidade.
           </p>
           <div class="d-flex flex-wrap gap-2">
-            <a href="#inscricao" class="btn btn-success btn-lg px-4 fw-semibold">Fazer Inscrição</a>
+            <a href="#cadastro" class="btn btn-success btn-lg px-4 fw-semibold">Fazer Inscrição</a>
             <a href="#chefes" class="btn btn-outline-success btn-lg px-4">Ver Guia de Chefes</a>
           </div>
         </div>
-
         <div class="col-lg-5">
           <div class="card border-success border-opacity-25 shadow-sm rounded-4">
             <div class="card-header bg-body d-flex justify-content-between align-items-center py-3">
@@ -88,14 +81,12 @@
       </div>
     </div>
   </header>
-
   <!-- Conteúdo Principal -->
   <main class="container my-5">
     <div class="row g-4">
-
-      <!-- Menu Lateral -->
-      <aside class="col-lg-3">
-        <div class="sticky-lg-top pt-lg-2">
+<!-- Menu Lateral -->
+<aside class="col-lg-3">
+        <div class="sticky-lg-top z-1" style="top: 5.5rem;">
           <div class="card border-0 shadow-sm rounded-4 mb-3">
             <div class="card-body">
               <h2 class="h6 fw-bold text-uppercase text-body-secondary mb-3">Menu Rápido</h2>
@@ -104,12 +95,10 @@
                 <a href="#classes" class="list-group-item list-group-item-action border-0 rounded-3">⚔️ Classes de Combate</a>
                 <a href="#chefes" class="list-group-item list-group-item-action border-0 rounded-3">💀 Ordem dos Chefes</a>
                 <a href="#biomas" class="list-group-item list-group-item-action border-0 rounded-3">🌲 Biomas Principais</a>
-                <a href="#inscricao" class="list-group-item list-group-item-action border-0 rounded-3 fw-semibold text-success">📝 Formulário de Inscrição</a>
-                <a href="#comentarios" class="list-group-item list-group-item-action border-0 rounded-3">💬 Comentários</a>
+                <a href="#cadastro" class="list-group-item list-group-item-action border-0 rounded-3 fw-semibold text-success">📝 Formulário de Cadastro</a>
               </div>
             </div>
           </div>
-
           <div class="alert alert-success border-0 shadow-sm rounded-4 mb-0" role="alert">
             <h3 class="alert-heading h6 fw-bold">🧑🏼‍🌾 Dica do Guia (NPC)</h3>
             <p class="small mb-0">
@@ -118,10 +107,8 @@
           </div>
         </div>
       </aside>
-
       <!-- Seções do Site -->
       <div class="col-lg-9 d-flex flex-column gap-4">
-
         <!-- Seção 1: Carrossel de Imagens do Jogo -->
         <section id="galeria" class="card border-0 shadow-sm rounded-4">
           <div class="card-body p-4">
@@ -132,7 +119,6 @@
               </div>
               <span class="badge text-bg-success">4 Cenários</span>
             </div>
-
             <div id="carouselTerraria" class="carousel slide rounded-4 overflow-hidden shadow-sm" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselTerraria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -140,7 +126,6 @@
                 <button type="button" data-bs-target="#carouselTerraria" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselTerraria" data-bs-slide-to="3" aria-label="Slide 4"></button>
               </div>
-
               <div class="carousel-inner">
                 <!-- Slide 1: Floresta e Vila Inicial -->
                 <div class="carousel-item active">
@@ -158,7 +143,6 @@
                     <p class="small mb-0">Explore as profundezas em busca de minérios raros, baús dourados, Cristais de Vida e Fragmentos de Cristal no Hardmode.</p>
                   </div>
                 </div>
-
                 <!-- Slide 3: Selva Subterrânea e Bulbo da Plantera -->
                 <div class="carousel-item">
                   <img src="../img/selva.png" class="d-block w-100 object-fit-cover" style="height: 480px;" alt="Selva Subterrânea e Bulbo da Plantera">
@@ -167,7 +151,6 @@
                     <p class="small mb-0">Prepare sua arena antes de quebrar o misterioso bulbo brilhante que desperta a guardiã da selva.</p>
                   </div>
                 </div>
-
                 <!-- Slide 4: O Consagrado (The Hallow) -->
                 <div class="carousel-item">
                   <img src="../img/sagrado.png" class="d-block w-100 object-fit-cover" style="height: 480px;" alt="O Consagrado em Terraria">
@@ -177,7 +160,6 @@
                   </div>
                 </div>
               </div>
-
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselTerraria" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
@@ -189,66 +171,344 @@
             </div>
           </div>
         </section>
-    <!-- Section: Form -->
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
+<!-- Seção 2: Classes de Combate -->
+        <section id="classes" class="card border-0 shadow-sm rounded-4">
+          <div class="card-header bg-body pt-4 px-4">
+            <span class="text-success fw-semibold small text-uppercase">Especializações</span>
+            <h2 class="h3 fw-bold mb-3">Classes de Combate</h2>
+            <ul class="nav nav-tabs card-header-tabs" id="tabsClasses" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active fw-semibold" id="guerreiro-tab" data-bs-toggle="tab" data-bs-target="#guerreiro" type="button" role="tab">
+                  ⚔️ Guerreiro
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" id="atirador-tab" data-bs-toggle="tab" data-bs-target="#atirador" type="button" role="tab">
+                  🏹 Atirador
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" id="mago-tab" data-bs-toggle="tab" data-bs-target="#mago" type="button" role="tab">
+                  🔮 Mago
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" id="invocador-tab" data-bs-toggle="tab" data-bs-target="#invocador" type="button" role="tab">
+                  👻 Invocador
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body p-4">
+            <div class="tab-content" id="tabsClassesContent">
+              <div class="tab-pane fade show active" id="guerreiro" role="tabpanel">
+                <h3 class="h5 fw-bold text-danger">Guerreiro (Melee) — Alta Defesa</h3>
+                <p class="text-body-secondary">
+                  Focado em espadas, ioiôs, lanças e bumerangues. Possui a maior resistência física do jogo, ideal para segurar os ataques dos chefes.
+                </p>
+                <span class="badge text-bg-secondary me-1">Armadura Final: Solar Flare</span>
+                <span class="badge text-bg-danger">Arma Icônica: Zenith</span>
+              </div>
+              <div class="tab-pane fade" id="atirador" role="tabpanel">
+                <h3 class="h5 fw-bold text-success">Atirador (Ranger) — Longa Distância</h3>
+                <p class="text-body-secondary">
+                  Especialista em arcos, armas de fogo e lançadores com munições especiais para manter dano constante à distância.
+                </p>
+                <span class="badge text-bg-secondary me-1">Armadura Final: Vortex</span>
+                <span class="badge text-bg-success">Arma Icônica: S.D.M.G. / Phantasm</span>
+              </div>
+              <div class="tab-pane fade" id="mago" role="tabpanel">
+                <h3 class="h5 fw-bold text-primary">Mago (Mage) — Dano Arcano em Área</h3>
+                <p class="text-body-secondary">
+                  Utiliza mana para conjurar cajados e livros de feitiços de altíssimo impacto, dependendo de poções e acessórios mágicos.
+                </p>
+                <span class="badge text-bg-secondary me-1">Armadura Final: Nebula</span>
+                <span class="badge text-bg-primary">Arma Icônica: Last Prism</span>
+              </div>
+              <div class="tab-pane fade" id="invocador" role="tabpanel">
+                <h3 class="h5 fw-bold text-info">Invocador (Summoner) — Lacaios e Chicotes</h3>
+                <p class="text-body-secondary">
+                  Comanda criaturas aliadas e sentinelas enquanto marca os alvos com chicotes. Exige boa movimentação para compensar a defesa baixa.
+                </p>
+                <span class="badge text-bg-secondary me-1">Armadura Final: Stardust</span>
+                <span class="badge text-bg-info">Arma Icônica: Terraprisma</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Seção 3: Ordem dos Chefes -->
+        <section id="chefes" class="card border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <span class="text-success fw-semibold small text-uppercase">Progressão</span>
+            <h2 class="h3 fw-bold mb-3">Ordem Recomendada dos Chefes</h2>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0">
+                <thead class="table-success">
+                  <tr>
+                    <th>Chefe</th>
+                    <th>Fase</th>
+                    <th>Invocação</th>
+                    <th>Recompensa Principal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fw-semibold">👁️ Olho de Cthulhu</td>
+                    <td><span class="badge text-bg-success">Pré-Hardmode</span></td>
+                    <td>Olho Suspeito (à noite)</td>
+                    <td>Minério Demoníaco / Carmim</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">🔥 Parede de Carne</td>
+                    <td><span class="badge text-bg-warning">Transição</span></td>
+                    <td>Boneco Vodu do Guia na lava</td>
+                    <td>Libera o <strong>Hardmode</strong> e o Martelo Sagrado</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">⚙️ Chefes Mecânicos</td>
+                    <td><span class="badge text-bg-danger">Hardmode</span></td>
+                    <td>Invocadores Mecânicos (à noite)</td>
+                    <td>Barras Consagradas e Almas</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">🌺 Plantera</td>
+                    <td><span class="badge text-bg-danger">Hardmode</span></td>
+                    <td>Quebrar o Bulbo na Selva</td>
+                    <td>Chave do Templo da Selva</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">🌙 Senhor da Lua</td>
+                    <td><span class="badge text-bg-dark">Chefe Final</span></td>
+                    <td>Derrotar os 4 Pilares Celestiais</td>
+                    <td>Barras de Luminite e armas finais</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- Seção 4: Biomas Principais -->
+        <section id="biomas" class="card border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <span class="text-success fw-semibold small text-uppercase">Exploração</span>
+            <h2 class="h3 fw-bold mb-3">Biomas Principais</h2>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="card h-100 bg-body-tertiary border-0 rounded-3">
+                  <div class="card-body">
+                    <h3 class="h6 fw-bold text-success">🌲 Floresta</h3>
+                    <p class="small text-body-secondary mb-0">
+                      Bioma inicial seguro para construir sua base principal, abrigar NPCs e coletar recursos básicos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 bg-body-tertiary border-0 rounded-3">
+                  <div class="card-body">
+                    <h3 class="h6 fw-bold text-danger">🩸 Corrupção &amp; Carmim</h3>
+                    <p class="small text-body-secondary mb-0">
+                      Biomas hostis que espalham infecção pelo mapa e guardam os primeiros chefes de progressão.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 bg-body-tertiary border-0 rounded-3">
+                  <div class="card-body">
+                    <h3 class="h6 fw-bold text-warning">🌴 Selva Subterrânea</h3>
+                    <p class="small text-body-secondary mb-0">
+                      Repleta de tesouros, Frutas da Vida, a colmeia da Abelha Rainha e o Templo Lihzahrd.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 bg-body-tertiary border-0 rounded-3">
+                  <div class="card-body">
+                    <h3 class="h6 fw-bold text-info">🦄 O Consagrado</h3>
+                    <p class="small text-body-secondary mb-0">
+                      Surge no Hardmode com visual vibrante, unicórnios, fadas e materiais essenciais para o fim do jogo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Seção 5: Formulário de Cadastro com Validação e Toast -->
+        <section id="cadastro" class="card border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <span class="badge text-bg-success mb-2">Conta da Comunidade</span>
+            <h2 class="h3 fw-bold mb-2">Formulário de Cadastro</h2>
+            <p class="text-body-secondary mb-4">
+              Crie sua conta gratuita para salvar suas builds e acessar o servidor brasileiro de Terraria.
+            </p>
+            <form id="formCadastro" class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="nomeCompleto" class="form-label fw-semibold">Nome Completo *</label>
+                <input type="text" class="form-control" id="nomeCompleto" placeholder="Ex.: Lucas Andrade" required>
+                <div class="invalid-feedback">
+                  Por favor, informe seu nome completo.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="nomeUsuario" class="form-label fw-semibold">Nome de Usuário (Nickname) *</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="nomeUsuario" placeholder="Ex.: Lucas_Terrariano" minlength="3" required>
+                  <div class="invalid-feedback">
+                    Escolha um nickname com pelo menos 3 caracteres.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <label for="emailCadastro" class="form-label fw-semibold">E-mail *</label>
+                <input type="email" class="form-control" id="emailCadastro" placeholder="jogador@exemplo.com.br" required>
+                <div class="invalid-feedback">
+                  Por favor, digite um endereço de e-mail válido.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="dataNascimento" class="form-label fw-semibold">Data de Nascimento *</label>
+                <input type="date" class="form-control" id="dataNascimento" required>
+                <div class="invalid-feedback">
+                  Informe sua data de nascimento.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="senhaCadastro" class="form-label fw-semibold">Senha *</label>
+                <input type="password" class="form-control" id="senhaCadastro" placeholder="Mínimo de 6 caracteres" minlength="6" required>
+                <div class="invalid-feedback">
+                  A senha deve ter no mínimo 6 caracteres.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="confirmarSenha" class="form-label fw-semibold">Confirmar Senha *</label>
+                <input type="password" class="form-control" id="confirmarSenha" placeholder="Repita sua senha" required>
+                <div id="feedbackConfirmarSenha" class="invalid-feedback">
+                  Por favor, confirme sua senha.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="plataformaJogo" class="form-label fw-semibold">Plataforma Principal *</label>
+                <select class="form-select" id="plataformaJogo" required>
+                  <option value="" selected disabled>Selecione...</option>
+                  <option value="pc">PC (Steam / GOG)</option>
+                  <option value="mobile">Mobile (Android / iOS)</option>
+                  <option value="console">Console (PS / Xbox / Switch)</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione sua plataforma principal.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="classeFavorita" class="form-label fw-semibold">Classe Favorita *</label>
+                <select class="form-select" id="classeFavorita" required>
+                  <option value="" selected disabled>Selecione...</option>
+                  <option value="guerreiro">⚔️ Guerreiro (Melee)</option>
+                  <option value="atirador">🏹 Atirador (Ranger)</option>
+                  <option value="mago">🔮 Mago (Mage)</option>
+                  <option value="invocador">👻 Invocador (Summoner)</option>
+                  <option value="multiclasse">🌟 Multiclasse</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione sua classe favorita.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="aceiteTermos" required>
+                  <label class="form-check-label small" for="aceiteTermos">
+                    Li e concordo com os Termos de Uso e as regras de boa convivência da comunidade. *
+                  </label>
+                  <div class="invalid-feedback">
+                    Você deve aceitar os termos antes de finalizar o cadastro.
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="receberNovidades">
+                  <label class="form-check-label small" for="receberNovidades">
+                    Desejo receber novidades, guias e eventos do servidor por e-mail.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 d-flex flex-wrap gap-2 pt-2">
+                <button class="btn btn-success px-4 fw-semibold" type="submit">Finalizar Cadastro</button>
+                <button class="btn btn-outline-secondary px-4" type="reset" id="btnLimparCadastro">Limpar</button>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-      <div class="col-12">
-        <label for="inputAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
+    </div>
+  </main>
+  <!-- Container do Toast (Notificação Flutuante no Canto Inferior Direito) -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastCadastro" class="toast align-items-center text-bg-success border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <div class="fw-bold mb-1">🌳 Cadastro realizado com sucesso!</div>
+          <span id="mensagemToastCadastro" class="small">Bem-vindo(a) à comunidade Terraria Brasil.</span>
         </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
       </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </div>
-    </form>
-
-<!-- Rodapé -->
+    </div>
+  </div>
+  <!-- Rodapé -->
   <footer class="bg-body border-top py-4 mt-5">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-body-secondary">
       <div>
         <strong>Terraria Brasil Fan Site</strong> — Desenvolvido com Bootstrap v5.3.9.
       </div>
       <div class="d-flex gap-3">
+        <a href="#galeria" class="link-success text-decoration-none">Galeria</a>
         <a href="#classes" class="link-success text-decoration-none">Classes</a>
         <a href="#chefes" class="link-success text-decoration-none">Chefes</a>
-        <a href="#inscricao" class="link-success text-decoration-none">Inscrição</a>
-        <a href="#comentarios" class="link-success text-decoration-none">Comentários</a>
+        <a href="#cadastro" class="link-success text-decoration-none">Cadastro</a>
       </div>
     </div>
   </footer>
-
-<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+    const formCadastro = document.getElementById('formCadastro');
+    const senhaCadastro = document.getElementById('senhaCadastro');
+    const confirmarSenha = document.getElementById('confirmarSenha');
+    const feedbackConfirmarSenha = document.getElementById('feedbackConfirmarSenha');
+    const toastEl = document.getElementById('toastCadastro');
+    const mensagemToast = document.getElementById('mensagemToastCadastro');
+    const toastCadastro = new bootstrap.Toast(toastEl, { delay: 5000 });
+    function validarSenhasIguais() {
+      if (confirmarSenha.value === '') {
+        confirmarSenha.setCustomValidity('Por favor, confirme sua senha.');
+        feedbackConfirmarSenha.textContent = 'Por favor, confirme sua senha.';
+      } else if (confirmarSenha.value !== senhaCadastro.value) {
+        confirmarSenha.setCustomValidity('As senhas não coincidem.');
+        feedbackConfirmarSenha.textContent = 'As senhas digitadas não coincidem.';
+      } else {
+        confirmarSenha.setCustomValidity('');
+      }
+    }
+    senhaCadastro.addEventListener('input', validarSenhasIguais);
+    confirmarSenha.addEventListener('input', validarSenhasIguais);
+    formCadastro.addEventListener('submit', (event) => {
+      event.preventDefault();
+      validarSenhasIguais();
+      if (!formCadastro.checkValidity()) {
+        event.stopPropagation();
+        formCadastro.classList.add('was-validated');
+        return;
+      }
+      const nickname = document.getElementById('nomeUsuario').value.trim();
+      mensagemToast.textContent = `Conta @${nickname} criada! Bem-vindo(a) ao Terraria Brasil.`;
+      toastCadastro.show();
+      formCadastro.reset();
+      formCadastro.classList.remove('was-validated');
+    });
+    document.getElementById('btnLimparCadastro').addEventListener('click', () => {
+      confirmarSenha.setCustomValidity('');
+      formCadastro.classList.remove('was-validated');
+    });
+  </script>
+</body>
 </html>
